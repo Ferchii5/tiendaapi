@@ -18,6 +18,7 @@
   .card-title {
     font-size: 13px;
     margin-bottom: 0.5rem;
+    color: brown;
   }
   
   .card-text {
@@ -45,7 +46,7 @@
   
   /* Opcional: Estilo para todas las tarjetas en una fila */
   .row .card {
-    flex: 1 0 33%; /* Distribuye el ancho de las tarjetas en una fila */
+    flex: 5 0 100%; /* Distribuye el ancho de las tarjetas en una fila */
     max-width: 33%; /* Limita el ancho máximo de las tarjetas en una fila */
     margin-right: 1rem; /* Espacio entre las tarjetas */
   }

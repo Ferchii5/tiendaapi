@@ -192,19 +192,18 @@
             reader.readAsDataURL(imageFile);
         }
 
-        // Función para eliminar un producto
         function deleteProduct(productId) {
             const productCard = document.querySelector(`.btn-delete[data-product-id="${productId}"]`).closest('.col-md-4');
             productCard.remove();
         }
 
-        // Agregar el evento de envío de formulario para agregar nuevo producto
+       
         document.getElementById('newProductForm').addEventListener('submit', addNewProduct);
 
-        // Agregar el evento de envío de formulario para editar producto
+        
         document.getElementById('editProductForm').addEventListener('submit', editProduct);
 
-        // Obtener y mostrar los productos existentes
+        
         axios.get(url)
             .then((response) => {
                 if (response.status === 200) {

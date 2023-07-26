@@ -1,40 +1,67 @@
-/* Estilo para las tarjetas */
+
+body{
+  background-color: #e486fe;
+}
 .card {
+  background-color: #db9cec;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
   height: 100%;
 }
 
-.card-img-top {
-  object-fit: contain;
-  height: 200px; /* Ajusta la altura según tus necesidades */
-  width: 100%; /* Ajusta el ancho según tus necesidades */
+.card:hover {
+  transform: translateY(-5px);
 }
 
-
-.card-title {
-  margin-top: 10px;
+.card-body {
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .card-text {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.card-img-top {
+  object-fit: contain;
+  height: 150px; 
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.btn-edit,
+.btn-delete {
+  margin-right: 5px;
+}
+
+.btn-danger {
+  background-color: #dc3545;
+  border-color: #dc3545;
+}
+
+.btn-danger:hover {
+  background-color: #b02a37;
+  border-color: #b02a37;
+}
+
+.btn-primary.btn-edit,
+.btn-primary.btn-delete {
   margin-bottom: 5px;
 }
 
 .precio {
   font-weight: bold;
 }
-
-/* Estilo para el navbar */
-.navbar-brand img {
-  margin-right: 10px;
+.title-center {
+  text-align: center;
+  font-size: 40px;
+  font-style: italic;
+  color: #d48ce8;
 }
-
-.navbar-brand strong {
-  font-size: 1.2rem;
-}
-
-.align-middle{
-  width: 9%;
-  margin-left: 5%;
-}
-
-
-
